@@ -20,7 +20,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 16px;
-    font-family: CourierNew, Courier, monospace;
+    color: #fff;
+    font-family: MontserratRegular;
 }
 
 .App {
@@ -43,24 +44,48 @@
     max-width: 100%;
 }
 
-.input-section {
-	background: url("../assets/images/petal.svg") no-repeat 50% 50%;
-	min-height: 700px;
-    max-height: 700px;
+h1 {
+    margin-bottom: 50px;
+    font-size: 30px;
 }
 
-.container-hidden {
-	padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.navigation {
+}
+
+a {
+    text-decoration: none;
     max-width: 100%;
-    transition: height .6s ease-in-out;
+    padding-right: 15px;
 }
 
-.container-visible {
-	position: relative;
+
+.First {
+    background-color: #C4DFE6;
+    height: 100vh;
 }
+
+.Second {
+    background-color: #66A5AD;
+    height: 100vh;
+}
+
+
+.Third {
+    background-color: #07575B;
+    height: 100vh;
+}
+
+.Fourth {
+    background-color: #003B46;
+    height: 100vh;
+}
+
+.Fifth {
+    background-color: #505160;
+    height: 100vh;
+}
+
+
 
 /*** Start of phone styles ***/
 @media screen and (max-width: 479px) {
