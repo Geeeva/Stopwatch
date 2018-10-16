@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: 'InconsolataBold';
-    src: url('.././assets/fonts/Inconsolata-Bold.ttf') format('truetype');
+    src: url('./assets/fonts/Inconsolata-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'MontserratRegular';
-    src: url('.././assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
 * { 

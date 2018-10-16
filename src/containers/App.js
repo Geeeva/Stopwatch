@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
+import OrderList from './OrderList/OrderList';
+import Footer from '.././components/Footer/Footer';
 import './App.css';
-import {BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
-import Route from 'react-router-dom/Route';
-import First from '../components/First/First';
-import Second from '../components/Second/Second';
-import Third from '../components/Third/Third';
-import Fourth from '../components/Fourth/Fourth';
-import Fifth from '../components/Fifth/Fifth';
 
 class App extends Component {
     
@@ -18,35 +13,29 @@ class App extends Component {
     }
     
     render() {
+        const gamesList = [
+            {name: 'Shadow of the Tomb Raider', price: 42.99},
+            {name: 'Shadow of Mordor', price: 16.50},
+            {name: 'Attack of Titan 2', price: 25.50},
+            {name: 'Payday 2', price: 22.98},
+            {name: 'Spider-Man', price: 46.99},
+            {name: 'Assasin Creed Odyssey', price: 46.99},
+            {name: 'EVOLVE - First Person Shooter', price: 29.00},
+            {name: 'Soul Calibur VI', price: 54.00},
+            {name: 'Yakuza Kiwami', price: 34.99 },
+            {name: 'Operation Warcade', price: 21.00}
+        ]
+
         return (
-            <Router>
-                <div className="App">
-                    <h1>Routing Demonstration</h1>
-                    <ul className="navigation">
-                        <NavLink className="first" to="/1">First page</NavLink>
-                        <NavLink className="second" to="/2">Second page</NavLink>
-                        <NavLink className="third" to="/3">Third page</NavLink>
-                        <NavLink className="fourth" to="/4">Fourth page</NavLink>
-                        <NavLink className="fifth" to="/5">Fifth page</NavLink>
-                    </ul>
-
-                    <Route className="Home" path="/" exact strict render={
-                        () => {
-                        return (<h1>Welcome Home</h1>);
-                    }}/>
-
-
-                    <Route className="First" path="/1" exact strict component={First}/>
-
-                    <Route className="Second" path="/2" exact strict component={Second}/>
-
-                    <Route className="Third" path="/3" exact strict component={Third}/>
-
-                    <Route className="Fourth" path="/4" exact strict component={Fourth}/>
-
-                    <Route className="Fifth" path="/5" exact strict component={Fifth}/>
+            <div className="App">
+                <div className="container-fluid">
+                    <div className="container">   
+                       <h1>PS4 GAMES</h1>
+                       <OrderList items={gamesList}/>
+                    </div>
                 </div>
-            </Router>
+                <Footer />
+            </div>
         );
     }
 }
