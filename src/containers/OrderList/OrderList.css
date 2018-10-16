@@ -1,40 +1,44 @@
 #arc {
 	display: block;
+	stroke-dashoffset: 3925px;
+	stroke-dasharray: 3925px;
 }
 
 #arc-sm {
 	display: none;
 }
 
+#arc-sm {
+	stroke-dashoffset: 3925px;
+	stroke-dasharray: 3925px;
+}
+
 #arc {
-    -webkit-animation: spiralAnim .8s 2s ease;
-    animation: spiralAnim .8s 2s ease;
+    -webkit-animation: dashAnim 1s 1s linear forwards;
+    animation: dashAnim 1s 1s linear forwards;
 }
 
-/*@-webkit-keyframes spiralAnim {
+@-webkit-keyframes dashAnim {
+
     0% {
-        stroke-dasharray: 0px 3925px;
-        stroke-dashoffset: 0px;
+    	stroke-dashoffset: 3925px;
     }
 
     100% {
-        stroke-dasharray: 3925px 3925px;
-        stroke-dashoffset: 3925px;
+        stroke-dashoffset: 0px;
     }
 }
 
-@keyframes spiralAnim {
+@keyframes dashAnim {
+
     0% {
-        stroke-dasharray: 0px 3925px;
-                stroke-dashoffset: 3925px;
+    	stroke-dashoffset: 3925px;
     }
 
     100% {
-        stroke-dasharray: 3925px 3925px;
-
         stroke-dashoffset: 0px;
     }
-}*/
+}
 
 .order-items {
 	max-width: 500px;
@@ -197,6 +201,33 @@
 	#arc-sm {
 		display: block;
 	}
+
+	#arc-sm {
+    -webkit-animation: dashAnim 1s 1s linear forwards;
+    animation: dashAnim 1s 1s linear forwards;
+}
+
+@-webkit-keyframes dashAnim {
+
+    0% {
+    	stroke-dashoffset: 3925px;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes dashAnim {
+
+    0% {
+    	stroke-dashoffset: 3925px;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
 
     .order-items {
 		max-width: 400px;

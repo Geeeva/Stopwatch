@@ -64,12 +64,12 @@ class OrderList extends Component {
         return (
             <div className="order-items-wrapper">
                 <svg id="arc" viewBox="0 0 1922 100.2">
-                    <path id="arc-stroke" fill="none" stroke="#BCBCBE" strokeWidth="5" strokeMiterlimit="10" d="M969.3,21.9c-344.4,0-669.8,82.4-956.8,229.7v6
-                        h1922.3C1646,106.7,1317.2,21.9,969.3,21.9z"/>
+                    <path id="arc-stroke" fill="none" stroke="#BCBCBE" strokeWidth="5" 
+       strokeMiterlimit="10" d="M1591.4,115.8c-196.6-61.1-405.6-93.9-622.1-93.9c-218.8,0-430,33.3-628.5,95.3"/>
                 </svg>
                 <svg id="arc-sm" viewBox="0 0 771.8 44.4">
-                    <path id="arc-stroke-sm" fill="none" stroke="#BCBCBE" strokeWidth="5" strokeMiterlimit="10" d="M386.3,12.2c-344.4,0-669.8,82.4-956.8,229.7v6
-                        h1922.3C1063,96.9,734.2,12.2,386.3,12.2z"/>
+                    <path fill="none" stroke="#BCBCBE" strokeWidth="5" 
+                    strokeMiterlimit="10" d="M766.6,46.6C643.2,24,516.1,12.2,386.3,12.2 C255.5,12.2,127.6,24,3.4,46.8"/>
                 </svg>
                 <h3>List of available PS4 games</h3>
                 
