@@ -66,7 +66,7 @@ class OrderList extends Component {
                 <svg id="arc" viewBox="0 0 1922 100.2">
                     <path id="arc-stroke" fill="none" stroke="#BCBCBE" strokeWidth="5" 
        strokeMiterlimit="10" d="M1591.4,115.8c-196.6-61.1-405.6-93.9-622.1-93.9c-218.8,0-430,33.3-628.5,95.3"/>
-                </svg>
+                </svg> 
                 <svg id="arc-sm" viewBox="0 0 771.8 44.4">
                     <path fill="none" stroke="#BCBCBE" strokeWidth="5" 
                     strokeMiterlimit="10" d="M766.6,46.6C643.2,24,516.1,12.2,386.3,12.2 C255.5,12.2,127.6,24,3.4,46.8"/>
