@@ -1,25 +1,18 @@
-
 @font-face {
-    font-family: 'InconsolataBold';
-    src: url('.././assets/fonts/Inconsolata-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MontserratRegular';
-    src: url('.././assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'AtamiBold';
+    src: url('../assets/fonts/Atami-Bold.otf') format('truetype');
 }
 
 * { 
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-size: 16px;
-    font-family: MontserratRegular;
+    box-sizing: border-box;
+    font-family: AtamiBold;
+    font-size: 21px;
+    text-align: center;
+    color: #000;
 }
 
-.App {
-	text-align: center;
-	margin-top: 50px;
+body {
+    background-color: #BFBFBF;
 }
 
 .container-fluid {
@@ -27,7 +20,6 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 100%;
 }
 
 .container {
@@ -35,61 +27,41 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
-    max-width: none;
+    max-width: 100%;
 }
 
 h1 {
-    color: #fff;
     font-size: 50px;
-    margin-bottom: 30px;
-    font-family: InconsolataBold;
-    font-size: 60px;
 }
 
-h3 {
-    margin-bottom: 20px;
-    font-family: InconsolataBold;
-    font-size: 25px;
-    color: #BCBCBE;
+.container-fluid .container-first {
+    position: relative;
+    height: 75vh;
 }
 
-p {
-    font-size: 16px;
-    font-family: InconsolataBold;
-    color: #BCBCBE;
+.container-fluid-second {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-a {
-    text-decoration: none;
-    max-width: 100%;
-    padding-right: 15px;
+.container-fluid-second .container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
+/*** Start of medium tablet styles ***/
+@media screen and (max-width: 768px) {
+    .container-fluid .container-first {
+        height: 78vh;
+    }
+}
+
 
 /*** Start of phone styles ***/
 @media screen and (max-width: 479px) {
-
-    .App {
-        margin-top: 10px;
-    }
-
-    .container {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    h1 {
-        font-size: 35px;
-        margin-top: 35px;
-        margin-bottom: 20px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    .color-recognition {
-        background-size: cover;
+    .container-fluid .container-first {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 78vh;
     }
 }
-

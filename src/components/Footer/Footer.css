@@ -1,245 +1,96 @@
-.container-fluid-second {
-    padding-left: 0px;
-    padding-right: 0px;
+.App #triangle-footer {
+    display: block;
+    position: relative;
+    bottom: -1px;
+    line-height: 0;
+    z-index: 1;
 }
 
-.container-fluid-second .container {
-    padding-left: 0px;
-    padding-right: 0px;
+.App .social-footer {
+    background-color: #551E54;
+    font-size: 18px;
 }
 
-.footer-wrapper {
-	margin-top: 50px;
-}
-
-.bg-wrapper {
-	position: relative;
-	height: auto;
-}
-
-#footer-bg {
-	display: block;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-#footer-bg-xl {
-    display: none;
-    min-height: 100%;
-    min-width: 100%;
-}
-
-#footer-bg-md {
-    display: none;
-}
-
-#footer-bg-sm {
-    display: none;
-}
-
-#footer-bg-xs {
-    display: none;
-}
-
-.social-footer {
+.App .social-footer .social .intro {
+    color: #BFBFBF;
+    font-family: "AtamiBold";
     font-size: 16px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-}
-
-.social-footer .social .intro {
-    font-weight: 700;
-    font-size: 16px;
-    text-align: center;
-    font-family: InconsolataBold;
-    color: #BCBCBE;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 0px;
+    margin-bottom: 10px;
 }
 
-.social-footer .social .intro:hover {
-    font-family: InconsolataBold;
-    color: #BCBCBE;
+.App .social-footer .social .intro:hover {
+    color: #fff;
     transition: color .6s ease-in-out;
 }
 
-figure {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-figure a {
-    text-decoration: none;
-}
-
-.frame {
-	display: inline-block;
-	border-radius: 50%;
-}
-
-#github, #linkedin {
-	height: 40px;
-	width: 40px;
-    border-radius: 50%;
-    border: solid 3px #BCBCBE;
-}
-
-#github {
-    margin-right: 10px;
-}
-
-#slash {
+.App figure {
     display: inline-block;
-    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.App figure a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.App #github, .App #linkedin {
     width: 30px;
-    margin-bottom: 5px; 
+    height: 30px;
+    fill: #BFBFBF;
+    transition: fill .4s ease-in-out; 
 }
 
-#github .circle, #linkedin .circle {
-	fill: #454D5B;
+.App #github:hover, .App #github:focus, .App #linkedin:hover, .App #linkedin:focus {
+    fill: #F1F3F4;
 }
 
-#github:hover .circle-bg, #linkedin:hover .circle-bg {
- 	fill: #2A2E39;
-    transition: fill .2s ease-in-out;
-}
-
-#github .octocat, #linkedin .linkedin-sign {
-    fill: #fff;
-}
-
-.social-footer .email {
+.App .social-footer .email {
     padding-bottom: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
-    text-align: center;
 }
 
-.email a {
-    font-family: InconsolataBold;
-    color: #BCBCBE;
+.App .email a {
+    font-family: "AtamiBold";
+    color: #BFBFBF;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
 }
 
-.email a:hover {
-    color: #BCBCBE;
-    transition: color .4s ease-in-out;
-}
-
-/*** Start of large tablet styles ***/
-@media screen and (max-width: 1280px) {
-
-    #footer-bg {
-        display: none;
-    }
-
-    #footer-bg-xl {
-        display: block;
-    }
-
-    #footer-bg-md {
-        display: none;
-    }
-
-    #footer-bg-sm {
-        display: none;
-    }
-
-    #footer-bg-xs {
-        display: none;
-    }
-}    
-
-/*** Start of large tablet styles ***/
-@media screen and (max-width: 991px) {
-    
-    #footer-bg {
-        display: none;
-    }
-
-    #footer-bg-xl {
-        display: none;
-    }
-
-    #footer-bg-md {
-        display: block;
-    }
-
-    #footer-bg-sm {
-        display: none;
-    }
-
-    #footer-bg-xs {
-        display: none;
-    }
+.App .email a:hover {
+    color: #fff;
+    transition: color .6s ease-in-out;
 }
 
 /*** Start of medium tablet styles ***/
-
-@media screen and (max-width: 767px) {
-    #footer-bg {
-        display: none;
-    }
-
-    #footer-bg-xl {
-        display: none;
-    }
-
-    #footer-bg-md {
-        display: none;
-    }
-
-    #footer-bg-sm {
-        display: block;
-    }
-
-    #footer-bg-xs {
-        display: none;
+@media screen and (max-width: 768px) {
+    .App .header-wrapper h1 {
+        box-sizing: border-box;
+        font-size: 33px;
+        padding: 50px 10px 50px 10px;
     }
 }
 
 /*** Start of phone styles ***/
 @media screen and (max-width: 479px) {
-
-    .footer-wrapper {
-        margin-top: 50px;
+    .App .social-footer .social .intro {
+        padding-top: 30px;
+        margin-bottom: 0px;
+        font-size: 14px;
     }
 
-    #footer-bg {
-        display: none;
+    .App figure {
+        margin-bottom: 0px;
     }
 
-    #footer-bg-xl {
-        display: none;
+    .App .social-footer .email a {
+        font-size: 14px;
+        padding-bottom: 30px;
     }
-
-    #footer-bg-md {
-        display: none;
-    }
-
-    #footer-bg-sm {
-        display: none;
-    }
-
-    #footer-bg-xs {
-        display: block;
-        max-width: 479px;
-    }
-
-    .social-footer .email {
-        padding-bottom: 20px;
-    }
-
-    .social-footer .social .intro, .email a {
-        font-size: 15px;
-    }
-   
 }
