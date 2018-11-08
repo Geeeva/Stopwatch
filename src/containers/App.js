@@ -10,7 +10,7 @@ class App extends Component {
 	      	<div className="App">
 	      		<div className="container-fluid">
                     <div className="container-first">
-	        			<Stopwatch start={Date.now()} />
+	        			<Stopwatch />
 	        		</div>
 	        	</div>
 	        	<div className="container-fluid-second">
