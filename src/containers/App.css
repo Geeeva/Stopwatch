@@ -36,7 +36,7 @@ h1 {
 
 .container-fluid .container-first {
     position: relative;
-    height: 75vh;
+    height: 500px;
 }
 
 .container-fluid-second {
@@ -50,12 +50,6 @@ h1 {
     height: 10vh;
 }
 
-@media screen and (max-width: 1252px) {
-    .container-fluid .container-first {
-        height: 95vh;
-    }
-}
-
 /*** Start of large tablet styles ***/
 @media screen and (max-width: 991px) {
 
@@ -65,14 +59,7 @@ h1 {
     }
 
     .container-fluid .container-first {
-        height: 90vh;
-    }
-}
-
-/*** Start of medium tablet styles ***/
-@media screen and (max-width: 768px) {
-    .container-fluid .container-first {
-         height: 80vh;
+        height: 510px;
     }
 }
 
@@ -80,6 +67,6 @@ h1 {
 @media screen and (max-width: 479px) {
     .container-fluid .container-first {
         padding-left: 15px;
-        padding-right: 15px;
+        height: 520px;
     }
 }
