@@ -76,7 +76,7 @@ class Stopwatch extends Component {
 	pauseHandler = () => {
 		this.setState({
 			pause: true,
-			switchCount: !this.state.switchCount
+			switchCount: false
 		})
 	}
 
