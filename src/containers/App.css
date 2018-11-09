@@ -36,7 +36,7 @@ h1 {
 
 .container-fluid .container-first {
     position: relative;
-    height: 500px;
+    height: 510px;
 }
 
 .container-fluid-second {
@@ -56,10 +56,6 @@ h1 {
     .container-fluid, .container {
         padding-left: 0px;
         padding-right: 0px;
-    }
-
-    .container-fluid .container-first {
-        height: 510px;
     }
 }
 
