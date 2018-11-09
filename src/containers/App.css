@@ -50,6 +50,12 @@ h1 {
     height: 10vh;
 }
 
+@media screen and (max-width: 1252px) {
+    .container-fluid .container-first {
+        height: 95vh;
+    }
+}
+
 /*** Start of large tablet styles ***/
 @media screen and (max-width: 991px) {
 
