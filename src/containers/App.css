@@ -44,9 +44,10 @@ h1 {
     padding-right: 0px;
 }
 
-.container-fluid-second .container {
+.container-fluid-second .container-second {
     padding-left: 0px;
     padding-right: 0px;
+    height: 10vh;
 }
 
 /*** Start of large tablet styles ***/
