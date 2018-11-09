@@ -49,10 +49,24 @@ h1 {
     padding-right: 0px;
 }
 
+/*** Start of large tablet styles ***/
+@media screen and (max-width: 991px) {
+
+    .container-fluid, .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-fluid .container-first {
+        height: 85vh;
+    }
+}
+
 /*** Start of phone styles ***/
 @media screen and (max-width: 479px) {
     .container-fluid .container-first {
         padding-left: 15px;
         padding-right: 15px;
+        height: 80vh;
     }
 }
