@@ -10,6 +10,7 @@ class Stopwatch extends Component {
 		this.state = {
 			count: 0,
 			pause: true,
+			switchCount: false,
 			clock: 0,
 			seconds: 0,
 			minutes: 0,
@@ -29,45 +30,53 @@ class Stopwatch extends Component {
 	countStopwatch = () => {
 
 		let counter = setInterval(() => {
+			if (this.state.switchCount === true && !this.state.pause) {
+		       	this.setState({
+		       		count: this.state.count + 1,
+		       		days : Math.floor(this.state.count / (1 * 60 * 60 * 24)),
+    				hours : Math.floor((this.state.count % (1 * 60 * 60 * 24)) / (1 * 60 * 60)),
+    				minutes : Math.floor((this.state.count % (1 * 60 * 60)) / (1 * 60)),
+   					seconds : Math.floor((this.state.count % (1 * 60)) / 1),
+		       		rotationS: this.state.rotationS === 359.9 ? 0 : 359.9
+		       	});
 
-			if (!this.state.pause) {
-			       	this.setState({
-			       		count: this.state.count + 1,
-			       		days : Math.floor(this.state.count / (1 * 60 * 60 * 24)),
-        				hours : Math.floor((this.state.count % (1 * 60 * 60 * 24)) / (1 * 60 * 60)),
-        				minutes : Math.floor((this.state.count % (1 * 60 * 60)) / (1 * 60)),
-       					seconds : Math.floor((this.state.count % (1 * 60)) / 1),
-			       		rotationS: this.state.rotationS === 359.9 ? 0 : 359.9
-			       	});
-
-			       	if(this.state.seconds === 0 && this.state.minutes !== 0) {
-			       		this.setState({
-			       			rotationM: this.state.rotationM === 359.9 ? 0 : 359.9
-			       		});
-			       	} else if(this.state.mintes === 0 && this.state.hours !== 0) {
-			       		this.setState({
-			       			rotationH: this.state.rotationM === 359.9 ? 0 : 359.9
-			       		});
-			       	} else if(this.state.hours === 0 && this.state.days !== 0) {
-			       		this.setState({
-			       			rotationH: this.state.rotationM === 359.9 ? 0 : 359.9
-			       		});
-			       	}
+		       	if(this.state.seconds === 0 && this.state.minutes !== 0) {
+		       		this.setState({
+		       			rotationM: this.state.rotationM === 359.9 ? 0 : 359.9
+		       		});
+		       	} else if(this.state.mintes === 0 && this.state.hours !== 0) {
+		       		this.setState({
+		       			rotationH: this.state.rotationM === 359.9 ? 0 : 359.9
+		       		});
+		       	} else if(this.state.hours === 0 && this.state.days !== 0) {
+		       		this.setState({
+		       			rotationH: this.state.rotationM === 359.9 ? 0 : 359.9
+		       		});
+		       	}
 			}
 		}
 		, 1000);
 	}
 
 	startHandler = () => {
-		this.setState({
-			pause: false,
-			count: 1
-		})
+		if(this.state.switchCount === false) {
+			this.setState({
+				switchCount: !this.state.switchCount,
+				pause: false,
+			});
+		} else {
+			this.setState({
+				switchCount: !this.state.switchCount,
+				count: 0,
+				pause: true
+			});
+		}
 	}
 
 	pauseHandler = () => {
 		this.setState({
-			pause: true
+			pause: true,
+			switchCount: !this.state.switchCount
 		})
 	}
 
@@ -94,7 +103,7 @@ class Stopwatch extends Component {
  						{this.state.seconds}</span>
 				</div>
 				<div className="buttons-wrapper">
-					<button id="start" onClick={this.startHandler}>START</button>
+					<button id="start" onClick={this.startHandler}>{this.state.switchCount === false ? "START" : "STOP"}</button>
 					<button id="pause" onClick={this.pauseHandler}>PAUSE</button>
 				</div>
 			</div>
