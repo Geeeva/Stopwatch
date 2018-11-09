@@ -36,7 +36,7 @@ h1 {
 
 .container-fluid .container-first {
     position: relative;
-    height: 610px;
+    height: 550px;
 }
 
 .container-fluid-second {
@@ -62,6 +62,6 @@ h1 {
 @media screen and (max-width: 479px) {
     .container-fluid .container-first {
         padding-left: 15px;
-        height: 630px;
+        height: 540px;
     }
 }
