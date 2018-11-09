@@ -56,12 +56,24 @@ h1 {
         padding-left: 0px;
         padding-right: 0px;
     }
+
+     .container-fluid .container-first {
+        padding-left: 15px;
+        height: 590px;
+    }
+}
+
+/*** Start of medium tablet styles ***/
+@media screen and (max-width: 768px) {
+    .container-fluid .container-first {
+        padding-left: 15px;
+        height: 590px;
+    }
 }
 
 /*** Start of phone styles ***/
 @media screen and (max-width: 479px) {
     .container-fluid .container-first {
         padding-left: 15px;
-        height: 580px;
     }
 }

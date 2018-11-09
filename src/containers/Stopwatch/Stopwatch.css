@@ -118,6 +118,12 @@ button {
     transform: translate3d(0, 0, 0);
 }
 
+/*** Start of medium tablet styles ***/
+@media screen and (max-width: 768px) {
+    
+
+}
+
 /*** Start of phone styles ***/
 @media screen and (max-width: 479px) {
     .days, .hours, .minutes, .seconds {
