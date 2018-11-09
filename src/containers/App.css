@@ -36,7 +36,7 @@ h1 {
 
 .container-fluid .container-first {
     position: relative;
-    height: 75vh;
+    height: 80vh;
 }
 
 .container-fluid-second {
@@ -48,14 +48,6 @@ h1 {
     padding-left: 0px;
     padding-right: 0px;
 }
-
-/*** Start of medium tablet styles ***/
-@media screen and (max-width: 768px) {
-    .container-fluid .container-first {
-        height: 80vh;
-    }
-}
-
 
 /*** Start of phone styles ***/
 @media screen and (max-width: 479px) {
